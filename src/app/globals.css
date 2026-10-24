@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #09090b;
+  --card: #ffffff;
+  --card-foreground: #09090b;
+  --popover: #ffffff;
+  --popover-foreground: #09090b;
+  --primary: #10b981;
+  --primary-foreground: #ffffff;
+  --secondary: #f4f4f5;
+  --secondary-foreground: #09090b;
+  --muted: #f4f4f5;
+  --muted-foreground: #71717a;
+  --accent: #ecfdf5;
+  --accent-foreground: #065f46;
+  --border: #e4e4e7;
+  --input: #e4e4e7;
+  --ring: #10b981;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-feature-settings: "rlig" 1, "calt" 1;
+  overflow-x: hidden;
+}
+
+/* Tactile Architectural Background Patterns (Subtle & Elegant) */
+.geo-grid-bg {
+  background-size: 64px 64px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.018) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.018) 1px, transparent 1px);
+}
+
+.geo-dot-bg {
+  background-size: 20px 20px;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.045) 1px, transparent 1px);
+}
+
+.geo-dot-subtle {
+  background-size: 16px 16px;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.09) 1px, transparent 1px);
+}
+
+.geo-grid-dense {
+  background-size: 48px 48px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.018) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.018) 1px, transparent 1px);
+}
+
+/* Brand Button Styles */
+.btn-emerald {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-family: var(--font-space-mono), monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: #10b981;
+  color: #ffffff;
+  border: 1px solid #10b981;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+}
+
+.btn-emerald:hover {
+  background-color: #059669;
+  border-color: #059669;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.25);
+}
+
+.btn-gray-ghost {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-family: var(--font-space-mono), monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: #ffffff;
+  color: #18181b;
+  border: 1px solid #d4d4d8;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+}
+
+.btn-gray-ghost:hover {
+  background-color: #f4f4f5;
+  border-color: #71717a;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4d4d8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
